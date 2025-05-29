@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayan El Manssouri - Portfolio Développeur</title>
+    <meta name="description" content="Portfolio de Rayan El Manssouri, développeur Full-Stack spécialisé dans la création d'outils innovants">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo à gauche -->
+            <div class="nav-left">
+                <div class="logo">Portfolio</div>
+            </div>
+            
+            <!-- Menu au centre -->
+            <div class="nav-center">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Accueil</a></li>
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#skills" class="nav-link">Compétences</a></li>
+                    <li><a href="#projects" class="nav-link">Projets</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Stats et actions à droite -->
+            <div class="nav-right">
+                <!-- GitHub Stats -->
+                <div class="navbar-stats">
+                    <div class="stats-mini">
+                        <div class="stat-mini">
+                            <span class="stat-number-mini" data-target="150">150</span>
+                            <span class="stat-label-mini">Commits</span>
+                        </div>
+                        <div class="stat-mini">
+                            <span class="stat-number-mini" data-target="25">25</span>
+                            <span class="stat-label-mini">Repos</span>
+                        </div>
+                        <div class="stat-mini">
+                            <span class="stat-number-mini" data-target="42">42</span>
+                            <span class="stat-label-mini">Stars</span>
+                        </div>
+                        <div class="stat-mini">
+                            <span class="stat-number-mini" data-target="18">18</span>
+                            <span class="stat-label-mini">PRs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Actions -->
+                <div class="navbar-actions">
+                    <a href="https://github.com/Rayan-Walnut" target="_blank" class="github-link-nav">
+                        <svg class="github-icon-nav" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="public/cv.pdf" target="_blank" class="cv-download">Télécharger CV</a>
+                </div>
+            </div>
+            
+            <!-- Bouton hamburger -->
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu mobile -->
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Accueil</a>
+        <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">À propos</a>
+        <a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()">Compétences</a>
+        <a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">Projets</a>
+        <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bonjour, je suis <span class="typing-container">
+                <span class="typing-text">Rayan</span>
+                <span class="typing-cursor"></span>
+            </span></h1>
+            <p>Développeur Full-Stack passionné par l'innovation et la création d'outils révolutionnaires</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="cta-button">Voir mes projets</a>
+                <a href="public/cv.pdf" target="_blank" class="cta-button secondary">Mon CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section CORRIGÉE -->
+    <section id="about" class="section about">
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="about-content-fixed">
+            <!-- Image centrée en haut -->
+            <div class="about-image-centered">👨‍💻</div>
+            
+            <!-- Texte de présentation centré -->
+            <div class="about-intro-centered">
+                <p>Développeur Full-Stack de 20 ans, architecte de solutions numériques innovantes depuis 5 ans. Spécialisé dans la création d'écosystèmes technologiques performants, je transforme des idées complexes en applications élégantes et fonctionnelles.</p>
+            </div>
+            
+            <!-- Grille d'expertise comme les autres sections -->
+            <div class="expertise-grid-fixed">
+                <div class="expertise-item">
+                    <div class="expertise-icon">🚀</div>
+                    <div class="expertise-content">
+                        <h4>Innovation Technologique</h4>
+                        <p>Création d'outils révolutionnaires comme Nebula IDE et Quantum Browser, repoussant les limites du développement moderne.</p>
+                    </div>
+                </div>
+                
+                <div class="expertise-item">
+                    <div class="expertise-icon">⚡</div>
+                    <div class="expertise-content">
+                        <h4>Performance & Optimisation</h4>
+                        <p>Expertise en optimisation système et développement d'applications haute performance avec des technologies de pointe.</p>
+                    </div>
+                </div>
+                
+                <div class="expertise-item">
+                    <div class="expertise-icon">🎯</div>
+                    <div class="expertise-content">
+                        <h4>Solutions Sur-Mesure</h4>
+                        <p>Développement d'applications personnalisées répondant aux besoins spécifiques, de l'interface utilisateur à l'architecture backend.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Expérience et Formation en deux colonnes égales -->
+            <div class="experience-formation-grid">
+                <div class="experience-section">
+                    <h3>💼 Expérience Professionnelle</h3>
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <span class="company">ITSO Technologies</span>
+                            <span class="role">Développeur Full-Stack</span>
+                            <p>Développement d'applications web complexes et optimisation des performances système.</p>
+                        </div>
+                        <div class="experience-item">
+                            <span class="company">VAISONET</span>
+                            <span class="role">Développeur Web</span>
+                            <p>Création d'interfaces utilisateur modernes et intégration de solutions backend.</p>
+                        </div>
+                        <div class="experience-item">
+                            <span class="company">GEOITECH TRUST (Maroc)</span>
+                            <span class="role">Développeur Junior</span>
+                            <p>Découverte des technologies web et maîtrise des fondamentaux du développement.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="formations-section">
+                    <h3>🎓 Formations</h3>
+                    <ul class="formation-list">
+                        <li><span class="formation-year">2024-2026</span> BTS SIO option SLAM - Lycée CCI du Gard, Nîmes</li>
+                        <li><span class="formation-year">2021-2024</span> Bac Pro SN - Lycée professionnel Argensol, Orange</li>
+                        <li><span class="formation-year">2020-2021</span> Seconde générale - Lycée La Salle, Avignon</li>
+                        <li><span class="formation-year">2019-2020</span> Brevet des collèges - Collège Saint-Louis, Orange</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <h2 class="section-title">Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>Frontend</h3>
+                <p>HTML5, CSS3, JavaScript, React, Vue.js, TypeScript</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚙️</div>
+                <h3>Backend</h3>
+                <p>Node.js, Python, PHP, Express, Django, Laravel</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🗄️</div>
+                <h3>Base de données</h3>
+                <p>MySQL, PostgreSQL, MongoDB, Redis</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">☁️</div>
+                <h3>DevOps</h3>
+                <p>Docker, AWS, Git, CI/CD, Linux</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">💫</div>
+                <div class="project-content">
+                    <h3 class="project-title">Nebula IDE</h3>
+                    <p class="project-description">Un IDE puissant et optimisé pour le développement collaboratif. Interface moderne avec support multi-langages et fonctionnalités avancées d'édition.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Electron</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://astracode.dev" target="_blank" class="project-link">
+                            🌐 Visiter le site
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">🌐</div>
+                <div class="project-content">
+                    <h3 class="project-title">Quantum Browser</h3>
+                    <p class="project-description">Navigateur web innovant avec bloqueur de publicités intégré. Focus sur la vie privée, la rapidité et une expérience de navigation épurée.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Chromium</span>
+                        <span class="tech-tag">WebKit</span>
+                        <span class="tech-tag">Qt</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rayan-Walnut/Quantum" target="_blank" class="project-link">
+                            🔗 GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">💬</div>
+                <div class="project-content">
+                    <h3 class="project-title">Mercure Chat</h3>
+                    <p class="project-description">Plateforme de messagerie instantanée moderne avec interface élégante. Support des conversations en temps réel et notifications push.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rayan-Walnut/mercurev2" target="_blank" class="project-link">
+                            🔗 GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">✨</div>
+                <div class="project-content">
+                    <h3 class="project-title">Lumina UI</h3>
+                    <p class="project-description">Librairie C++ simple et élégante pour créer des interfaces utilisateur. Design moderne avec composants réutilisables et performances optimisées.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">OpenGL</span>
+                        <span class="tech-tag">GLFW</span>
+                        <span class="tech-tag">ImGui</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rayan-Walnut/Lumina" target="_blank" class="project-link">
+                            🔗 GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">🎮</div>
+                <div class="project-content">
+                    <h3 class="project-title">Pokémon TCG App</h3>
+                    <p class="project-description">Application dédiée aux cartes Pokémon TCG avec recherche avancée, collection personnelle et statistiques détaillées.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">API REST</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rayan-Walnut/Pok-mon-TCG" target="_blank" class="project-link">
+                            🔗 GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">⚡</div>
+                <div class="project-content">
+                    <h3 class="project-title">Windows Services</h3>
+                    <p class="project-description">Collection de scripts PowerShell pour optimiser Windows 11. Amélioration des performances système et personnalisation avancée.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PowerShell</span>
+                        <span class="tech-tag">Batch</span>
+                        <span class="tech-tag">Windows API</span>
+                        <span class="tech-tag">Registry</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Rayan-Walnut/services" target="_blank" class="project-link">
+                            🔗 GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Contactez-moi</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Restons en contact</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <strong>Email</strong><br>
+                        r.elmanssouri@astracode.dev
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <strong>Téléphone</strong><br>
+                        06 52 65 78 67
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <strong>Localisation</strong><br>
+                        13, rue Caristie<br>84100 Orange
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-section">
+                    <strong>Contact</strong>
+                    <p>📧 r.elmanssouri@astracode.dev</p>
+                    <p>📱 06 52 65 78 67</p>
+                </div>
+                <div class="footer-section">
+                    <strong>Adresse</strong>
+                    <p>📍 13, rue Caristie</p>
+                    <p>84100 Orange, France</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Rayan El Manssouri. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
