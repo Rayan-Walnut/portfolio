@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - IA et Cybersécurité | Rayan El Manssouri</title>
+    <meta name="description" content="Veille technologique sur l'Intelligence Artificielle et son impact dans la cybersécurité">
+    <link rel="stylesheet" href="veille-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">Veille Technologique</div>
+            </div>
+            
+            <div class="nav-center">
+                <ul class="nav-menu">
+                    <li><a href="#introduction" class="nav-link active">Introduction</a></li>
+                    <li><a href="#ia-defense" class="nav-link">IA Défensive</a></li>
+                    <li><a href="#ia-offensive" class="nav-link">IA Offensive</a></li>
+                    <li><a href="#tendances" class="nav-link">Tendances</a></li>
+                    <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <a href="index.html" class="back-portfolio">← Portfolio</a>
+            </div>
+            
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu mobile -->
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#introduction" class="mobile-nav-link" onclick="closeMobileMenu()">Introduction</a>
+        <a href="#ia-defense" class="mobile-nav-link" onclick="closeMobileMenu()">IA Défensive</a>
+        <a href="#ia-offensive" class="mobile-nav-link" onclick="closeMobileMenu()">IA Offensive</a>
+        <a href="#tendances" class="mobile-nav-link" onclick="closeMobileMenu()">Tendances</a>
+        <a href="#conclusion" class="mobile-nav-link" onclick="closeMobileMenu()">Conclusion</a>
+        <a href="index.html" class="mobile-nav-link">← Portfolio</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Intelligence Artificielle <span class="highlight">& Cybersécurité</span></h1>
+            <p>Une analyse approfondie de l'impact révolutionnaire de l'IA dans le domaine de la cybersécurité</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">85%</span>
+                    <span class="stat-label">des entreprises utilisent l'IA en cybersécurité</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">200%</span>
+                    <span class="stat-label">d'augmentation des cyberattaques IA</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3.8s</span>
+                    <span class="stat-label">temps moyen de détection avec l'IA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="section introduction">
+        <h2 class="section-title">Introduction</h2>
+        <div class="intro-content">
+            <div class="intro-text">
+                <p class="intro-paragraph">
+                    L'Intelligence Artificielle révolutionne le paysage de la cybersécurité de manière spectaculaire. 
+                    Cette technologie transforme à la fois les méthodes de défense et d'attaque, créant un nouveau paradigme 
+                    dans la protection des systèmes d'information.
+                </p>
+                <p class="intro-paragraph">
+                    Cette veille technologique explore les dernières innovations, les défis émergents et les perspectives 
+                    d'avenir de l'IA appliquée à la cybersécurité, en analysant son double rôle d'épée et de bouclier 
+                    dans le cyberespace.
+                </p>
+            </div>
+            <div class="intro-visual">
+                <div class="ai-icon">🤖</div>
+                <div class="security-icon">🛡️</div>
+                <div class="connection-line"></div>
+            </div>
+        </div>
+        
+        <!-- Timeline -->
+        <div class="timeline">
+            <h3>Évolution de l'IA en Cybersécurité</h3>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-content">
+                        <h4>Premiers systèmes de détection ML</h4>
+                        <p>Déploiement des premiers systèmes de machine learning pour la détection d'anomalies</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h4>IA générative malveillante</h4>
+                        <p>Émergence des deepfakes et des attaques générées par IA</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h4>ChatGPT et cybersécurité</h4>
+                        <p>Impact des LLM sur la création de malwares et la sensibilisation</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h4>IA autonome de défense</h4>
+                        <p>Systèmes d'IA capables de réponse automatique aux incidents</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IA Défensive Section -->
+    <section id="ia-defense" class="section ia-defense">
+        <h2 class="section-title">IA Défensive : Le Bouclier Intelligent</h2>
+        
+        <div class="defense-grid">
+            <div class="defense-card">
+                <div class="card-icon">🔍</div>
+                <h3>Détection d'Anomalies</h3>
+                <p>Les algorithmes de machine learning analysent en temps réel les comportements suspects et identifient les menaces zero-day avec une précision de 95%.</p>
+                <div class="tech-list">
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Deep Learning</span>
+                    <span class="tech-tag">Analyse comportementale</span>
+                </div>
+            </div>
+
+            <div class="defense-card">
+                <div class="card-icon">⚡</div>
+                <h3>Réponse Automatisée</h3>
+                <p>Systèmes d'orchestration intelligents capables de réagir aux incidents en millisecondes, isolant automatiquement les menaces détectées.</p>
+                <div class="tech-list">
+                    <span class="tech-tag">SOAR</span>
+                    <span class="tech-tag">Automation</span>
+                    <span class="tech-tag">Orchestration</span>
+                </div>
+            </div>
+
+            <div class="defense-card">
+                <div class="card-icon">🧠</div>
+                <h3>Analyse Prédictive</h3>
+                <p>Prédiction des vecteurs d'attaque futurs basée sur l'analyse de patterns historiques et de threat intelligence.</p>
+                <div class="tech-list">
+                    <span class="tech-tag">Predictive Analytics</span>
+                    <span class="tech-tag">Threat Intelligence</span>
+                    <span class="tech-tag">Pattern Recognition</span>
+                </div>
+            </div>
+
+            <div class="defense-card">
+                <div class="card-icon">🔐</div>
+                <h3>Authentification Biométrique</h3>
+                <p>Reconnaissance faciale, vocale et comportementale pour une authentification multi-facteurs renforcée par l'IA.</p>
+                <div class="tech-list">
+                    <span class="tech-tag">Biométrie</span>
+                    <span class="tech-tag">Computer Vision</span>
+                    <span class="tech-tag">Behavioral Analytics</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cas d'usage -->
+        <div class="use-cases">
+            <h3>Cas d'Usage Concrets</h3>
+            <div class="use-case-grid">
+                <div class="use-case">
+                    <h4>🏦 Secteur Bancaire</h4>
+                    <p>Détection de fraudes en temps réel avec 99.7% de précision, réduction de 80% des faux positifs</p>
+                </div>
+                <div class="use-case">
+                    <h4>🏥 Santé</h4>
+                    <p>Protection des données patients, détection d'intrusions dans les systèmes médicaux connectés</p>
+                </div>
+                <div class="use-case">
+                    <h4>🏭 Industrie</h4>
+                    <p>Sécurisation des systèmes SCADA et protection contre les attaques sur l'IoT industriel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IA Offensive Section -->
+    <section id="ia-offensive" class="section ia-offensive">
+        <h2 class="section-title">IA Offensive : La Nouvelle Menace</h2>
+        
+        <div class="threat-landscape">
+            <div class="threat-category">
+                <div class="threat-header">
+                    <div class="threat-icon">🎭</div>
+                    <h3>Deepfakes & Manipulation</h3>
+                </div>
+                <div class="threat-content">
+                    <p>Création de contenus audio et vidéo ultra-réalistes pour l'ingénierie sociale et la désinformation.</p>
+                    <div class="threat-stats">
+                        <div class="stat">
+                            <span class="number">900%</span>
+                            <span class="label">Augmentation des deepfakes en 2023</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">96%</span>
+                            <span class="label">Taux de réussite des attaques vocales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="threat-category">
+                <div class="threat-header">
+                    <div class="threat-icon">🦠</div>
+                    <h3>Malwares Génératifs</h3>
+                </div>
+                <div class="threat-content">
+                    <p>Création automatisée de malwares polymorphes capables d'échapper aux systèmes de détection traditionnels.</p>
+                    <div class="threat-examples">
+                        <div class="example">
+                            <strong>WormGPT</strong> - Génération de phishing sophistiqué
+                        </div>
+                        <div class="example">
+                            <strong>FraudGPT</strong> - Création de campagnes de fraude
+                        </div>
+                        <div class="example">
+                            <strong>DarkBERT</strong> - IA entraînée sur le dark web
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="threat-category">
+                <div class="threat-header">
+                    <div class="threat-icon">🎯</div>
+                    <h3>Attaques Ciblées</h3>
+                </div>
+                <div class="threat-content">
+                    <p>Reconnaissance automatisée et personnalisation des attaques basées sur l'analyse de données publiques.</p>
+                    <div class="attack-chain">
+                        <div class="chain-step">1. Reconnaissance IA</div>
+                        <div class="chain-arrow">→</div>
+                        <div class="chain-step">2. Génération de contenu</div>
+                        <div class="chain-arrow">→</div>
+                        <div class="chain-step">3. Attaque personnalisée</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Défenses contre l'IA offensive -->
+        <div class="counter-measures">
+            <h3>Contre-mesures Émergentes</h3>
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <div class="counter-icon">🔬</div>
+                    <h4>Détection de Deepfakes</h4>
+                    <p>Algorithmes spécialisés dans l'identification des contenus générés par IA</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-icon">🛡️</div>
+                    <h4>IA vs IA</h4>
+                    <p>Systèmes d'IA défensifs entraînés spécifiquement contre les attaques génératives</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-icon">📊</div>
+                    <h4>Analyse Comportementale</h4>
+                    <p>Détection des patterns d'attaque générés automatiquement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tendances Section -->
+    <section id="tendances" class="section tendances">
+        <h2 class="section-title">Tendances & Innovations 2024</h2>
+        
+        <div class="trends-container">
+            <div class="trend-card featured">
+                <div class="trend-badge">🔥 Tendance #1</div>
+                <h3>IA Quantique en Cybersécurité</h3>
+                <p>L'émergence de l'informatique quantique révolutionne le chiffrement et ouvre de nouvelles possibilités pour l'IA en cybersécurité.</p>
+                <div class="trend-impact">
+                    <span class="impact-level high">Impact: Révolutionnaire</span>
+                    <span class="timeline">Horizon: 2025-2030</span>
+                </div>
+            </div>
+
+            <div class="trend-card">
+                <div class="trend-badge">⚡ Tendance #2</div>
+                <h3>Zero Trust + IA</h3>
+                <p>Intégration de l'IA dans les architectures Zero Trust pour une vérification continue et intelligente.</p>
+                <div class="trend-impact">
+                    <span class="impact-level medium">Impact: Majeur</span>
+                    <span class="timeline">Horizon: 2024-2025</span>
+                </div>
+            </div>
+
+            <div class="trend-card">
+                <div class="trend-badge">🧬 Tendance #3</div>
+                <h3>IA Explicable (XAI)</h3>
+                <p>Développement d'IA transparentes pour comprendre les décisions de sécurité et réduire les biais.</p>
+                <div class="trend-impact">
+                    <span class="impact-level medium">Impact: Important</span>
+                    <span class="timeline">Horizon: 2024-2026</span>
+                </div>
+            </div>
+
+            <div class="trend-card">
+                <div class="trend-badge">🌐 Tendance #4</div>
+                <h3>IA Edge Security</h3>
+                <p>Déploiement d'IA de sécurité directement sur les dispositifs IoT et edge computing.</p>
+                <div class="trend-impact">
+                    <span class="impact-level high">Impact: Transformateur</span>
+                    <span class="timeline">Horizon: 2024-2027</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technologies émergentes -->
+        <div class="emerging-tech">
+            <h3>Technologies Émergentes</h3>
+            <div class="tech-radar">
+                <div class="radar-section">
+                    <h4>Adopt</h4>
+                    <ul>
+                        <li>ML pour détection d'anomalies</li>
+                        <li>Automatisation SOAR</li>
+                        <li>Analyse comportementale</li>
+                    </ul>
+                </div>
+                <div class="radar-section">
+                    <h4>Trial</h4>
+                    <ul>
+                        <li>IA générative défensive</li>
+                        <li>Détection de deepfakes</li>
+                        <li>Threat hunting automatisé</li>
+                    </ul>
+                </div>
+                <div class="radar-section">
+                    <h4>Assess</h4>
+                    <ul>
+                        <li>Cryptographie post-quantique</li>
+                        <li>IA fédérée en sécurité</li>
+                        <li>Neurosymbolic AI</li>
+                    </ul>
+                </div>
+                <div class="radar-section">
+                    <h4>Hold</h4>
+                    <ul>
+                        <li>IA non-explicable critique</li>
+                        <li>Systèmes 100% automatisés</li>
+                        <li>IA sans supervision humaine</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="section conclusion">
+        <h2 class="section-title">Conclusion & Perspectives</h2>
+        
+        <div class="conclusion-content">
+            <div class="key-insights">
+                <h3>Points Clés</h3>
+                <div class="insights-grid">
+                    <div class="insight">
+                        <div class="insight-icon">⚖️</div>
+                        <h4>Équilibre Délicat</h4>
+                        <p>L'IA représente à la fois la solution et le problème en cybersécurité, nécessitant une approche équilibrée.</p>
+                    </div>
+                    <div class="insight">
+                        <div class="insight-icon">🚀</div>
+                        <h4>Innovation Continue</h4>
+                        <p>Le rythme d'innovation s'accélère, exigeant une veille technologique constante et une adaptation rapide.</p>
+                    </div>
+                    <div class="insight">
+                        <div class="insight-icon">👥</div>
+                        <h4>Facteur Humain</h4>
+                        <p>Malgré l'automatisation, l'expertise humaine reste cruciale pour la supervision et la prise de décision.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="future-outlook">
+                <h3>Perspectives d'Avenir</h3>
+                <div class="outlook-timeline">
+                    <div class="outlook-period">
+                        <h4>Court terme (2024-2025)</h4>
+                        <ul>
+                            <li>Généralisation des systèmes de détection ML</li>
+                            <li>Amélioration de la détection de deepfakes</li>
+                            <li>Intégration IA dans les SOC</li>
+                        </ul>
+                    </div>
+                    <div class="outlook-period">
+                        <h4>Moyen terme (2025-2027)</h4>
+                        <ul>
+                            <li>IA explicable en production</li>
+                            <li>Sécurité quantique précoce</li>
+                            <li>Automatisation avancée des réponses</li>
+                        </ul>
+                    </div>
+                    <div class="outlook-period">
+                        <h4>Long terme (2027+)</h4>
+                        <ul>
+                            <li>IA quantique mature</li>
+                            <li>Systèmes auto-adaptatifs</li>
+                            <li>Nouvelle génération de menaces IA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendations">
+                <h3>Recommandations</h3>
+                <div class="rec-list">
+                    <div class="recommendation">
+                        <strong>Pour les Entreprises:</strong> Investir dans la formation des équipes et l'adoption progressive de solutions IA de cybersécurité.
+                    </div>
+                    <div class="recommendation">
+                        <strong>Pour les Professionnels:</strong> Développer une expertise en IA appliquée à la sécurité et maintenir une veille technologique active.
+                    </div>
+                    <div class="recommendation">
+                        <strong>Pour l'Industrie:</strong> Établir des standards éthiques et des frameworks de gouvernance pour l'IA en cybersécurité.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-section">
+                    <strong>Veille Technologique</strong>
+                    <p>IA et Cybersécurité - 2024</p>
+                    <p>Rayan El Manssouri</p>
+                </div>
+                <div class="footer-section">
+                    <strong>Sources</strong>
+                    <p>ANSSI, NIST, IEEE Security</p>
+                    <p>Gartner, Forrester Research</p>
+                </div>
+                <div class="footer-section">
+                    <strong>Contact</strong>
+                    <p>📧 r.elmanssouri@astracode.dev</p>
+                    <p>🌐 <a href="index.html">Portfolio</a></p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Rayan El Manssouri. Veille technologique - BTS SIO</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="veille-script.js"></script>
+</body>
+</html>
